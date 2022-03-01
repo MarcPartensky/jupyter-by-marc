@@ -1,4 +1,4 @@
 push: build
-	docker-compose push jupyterlab
+	DOCKER_HOST=ssh://contabo docker-compose push jupyterlab
 build:
-	docker-compose build jupyterlab
+	DOCKER_HOST=ssh://contabo docker-compose build jupyterlab
