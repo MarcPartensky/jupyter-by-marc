@@ -1,5 +1,6 @@
+jupyterlab
 jupyterlab-link-share
-juypterlab-vim
+jupyterlab_vim
 jupyterlab-recents
 jupyterlab-spreadsheet-editor
 jupyter-videochat
