@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  jupyter-lab:
+  jupyterlab:
     image: marcpartensky/jupyterlab
     restart: unless-stopped
     build:
