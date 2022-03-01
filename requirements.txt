@@ -7,3 +7,5 @@ jupyterlab-unfold
 jupyterlab-spellchecker
 jupyterlab_search_replace
 jupyterlab-cell-flash
+jupyterlab_latex
+nbgitpuller
