@@ -1,3 +1,4 @@
+.PHONY: jupyterlab jupyterhub
 push: jupyterlab jupyterhub
 	docker-compose push jupyterlab jupyterhub
 jupyterlab:
