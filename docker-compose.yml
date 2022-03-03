@@ -5,8 +5,12 @@ services:
     build:
       context: jupyterlab
       dockerfile: ./Dockerfile
+    ports:
+      - "8888:8888"
   jupyterhub:
     image: marcpartensky/jupyterhub
     build:
       context: jupyterhub
       dockerfile: ./Dockerfile
+    ports:
+      - "8081:8081"
