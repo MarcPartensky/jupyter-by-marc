@@ -13,4 +13,4 @@ services:
       context: jupyterhub
       dockerfile: ./Dockerfile
     ports:
-      - "8081:8081"
+      - "8000:8000"
