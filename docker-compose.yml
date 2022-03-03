@@ -2,7 +2,11 @@ version: "3.9"
 services:
   jupyterlab:
     image: marcpartensky/jupyterlab
-    restart: unless-stopped
     build:
-      context: .
+      context: jupyterlab
+      dockerfile: ./Dockerfile
+  jupyterhub:
+    image: marcpartensky/jupyterhub
+    build:
+      context: jupyterhub
       dockerfile: ./Dockerfile
