@@ -5,6 +5,7 @@ RUN python -V
 
 WORKDIR /opt
 COPY requirements.txt ./
+RUN pip install -U pip
 RUN pip install -r requirements.txt
 
 RUN git clone git://github.com/jupyter/jupyter-drive.git
