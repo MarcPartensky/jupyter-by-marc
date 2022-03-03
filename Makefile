@@ -3,5 +3,7 @@ push: jupyterlab jupyterhub
 	docker-compose push jupyterlab jupyterhub
 jupyterlab:
 	docker-compose build jupyterlab
-jupyterhub:
+jupyterhub: jupyterhub-deploy-docker
 	docker-compose build jupyterhub
+jupyterhub-deploy-docker:
+	docker-compose -f jupyterhub-deploy-docker/docker-compose.yml build jupyterhub
