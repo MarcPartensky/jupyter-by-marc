@@ -1,7 +1,4 @@
-# FROM jupyter/base-notebook
-FROM python
-
-RUN python -V
+FROM jupyter/base-notebook
 
 WORKDIR /opt
 COPY requirements.txt ./
