@@ -1,4 +1,6 @@
-push: build
-	DOCKER_HOST=ssh://contabo docker-compose push jupyterlab
-build:
-	DOCKER_HOST=ssh://contabo docker-compose build jupyterlab
+push: jupyterlab jupyterhub
+	docker-compose push jupyterlab jupyterhub
+jupyterlab:
+	docker-compose build jupyterlab
+jupyterhub:
+	docker-compose build jupyterhub
