@@ -7,7 +7,6 @@ RUN apt-get install git -y
 WORKDIR /opt
 RUN git clone git://github.com/jupyter/jupyter-drive.git
 RUN pip install -e jupyter-drive
-RUN pwd
 
 USER jovyan
 WORKDIR /home/jovyan
